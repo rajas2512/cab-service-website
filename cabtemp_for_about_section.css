@@ -1,0 +1,25 @@
+.add_new_flex_container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add_new_flex_row1{
+    flex-basis: 60%;
+    padding-right: 50px;
+}
+
+.add_new_flex_row2{
+    flex-basis: 40%;
+    padding-left: 5px;
+}
+@media only screen and (max-width: 990px){
+    .add_new_flex_container{
+        flex-direction: column;
+        padding-right: 1px;
+    }
+    .add_new_flex_row2{
+        padding:50px;
+    }
+}
+
+ 

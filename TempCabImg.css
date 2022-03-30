@@ -1,0 +1,149 @@
+.cont_adding_flex{
+    align-items: flex-start;
+    justify-content: space-around;
+    position: relative;
+}
+.cont_adding_flex::before{
+    content: "";
+    position: absolute;
+    top: 33%;
+    width: 73%;
+    left: 8%;
+    height: 3px;
+    background: darkblue;
+}
+
+.adding_flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* flex-basis: 40%; */
+    width: 100%;
+}
+
+@media only screen and (max-width: 1200px){
+    .cont_adding_flex::before{
+     top: 21%;
+    } 
+ }
+
+@media only screen and (max-width: 995px){
+   .cont_adding_flex::before{
+    top: 12%;
+    height: 2px;
+   } 
+}
+
+@media only screen and (max-width: 768px){
+    .cont_adding_flex{
+       flex-direction: column;
+       position: relative;
+       left: 0;
+        
+    }
+    .cont_adding_flex::before{
+        height: 84%;
+        width: 3px;
+        left: 39%;
+        top: 1%;
+    }
+    .adding_flex{
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 10%;
+        
+    }
+    /* .adding_flex img{
+       pa;
+    } */
+    .adding_flex span{
+         padding-left: 4%;
+       
+    }
+
+    #Pics{
+        margin-right: 3%;
+    }
+
+    #Pics2{
+        margin-right: 1%;
+        margin-left: 2%;
+    }
+    
+}
+@media only screen and (max-width: 450px){
+    .cont_adding_flex::before{
+       
+        height: 84%;
+        width: 3px;
+        left: 36%;
+        top: 1%;
+    }
+    #Pics {
+        margin-right: 5%;
+    }
+
+   
+    
+}
+@media only screen and (max-width: 380px ) {
+    .pic1{
+        margin-left:4%;
+    }
+    #Pics2 {
+        /* margin-right: 0%; */
+        margin-left: 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 350px){
+    .pic1{
+        margin-left:4%;
+    }
+    #Pics2 {
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 300px){
+    .cont_adding_flex::before{
+       
+        height: 84%;
+        width: 3px;
+        left: 32%;
+        top: 1%;
+    }
+    .pic1{
+        margin-left:4%;
+    }
+    #Pics2 {
+        margin-right: 0%;
+        margin-left: 5%;
+    }
+    
+}
+
+@media only screen and (max-width: 240px){
+    .cont_adding_flex::before{
+       
+        height: 84%;
+        width: 3px;
+        left: 32%;
+        top: 1%;
+    }
+    .pic1{
+        margin-left:2%;
+    }
+    #Pics2 {
+        margin-right: 0%;
+        margin-left: 2%;
+    }
+    
+    .feed{
+        margin-left: 10%;
+    }
+}
